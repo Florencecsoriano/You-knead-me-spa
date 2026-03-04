@@ -123,6 +123,28 @@ footer { padding: 36px 30px; background: #0d0a05; border-top: 1px solid rgba(201
 /* Reveal animation */
 .reveal { opacity: 1; transform: translateY(0); }
 
+/* Music Player */
+.music-btn {
+position: fixed; bottom: 30px; right: 30px; z-index: 999;
+width: 56px; height: 56px; border-radius: 50%;
+background: linear-gradient(135deg, #E8D5A3, #C9A84C, #8B6914);
+border: none; cursor: pointer;
+display: flex; align-items: center; justify-content: center;
+box-shadow: 0 4px 20px rgba(201,168,76,0.5);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.music-btn:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(201,168,76,0.6); }
+.music-btn span { font-size: 22px; }
+.music-label {
+position: fixed; bottom: 92px; right: 20px; z-index: 999;
+font-family: ‘Cinzel’, serif; font-size: 8px; letter-spacing: 0.2em;
+text-transform: uppercase; color: #C9A84C;
+background: rgba(26,18,9,0.85); padding: 6px 12px;
+border: 1px solid rgba(201,168,76,0.3);
+opacity: 0; transition: opacity 0.3s;
+}
+.music-label.show { opacity: 1; }
+
 @media (max-width: 640px) {
 .nav-links { display: none; }
 .about-stats { gap: 20px; }
@@ -133,6 +155,16 @@ footer { flex-direction: column; text-align: center; }
 
 </head>
 <body>
+
+<!-- MUSIC -->
+
+<audio id="bgMusic" loop>
+<source src="you-knead-me-spa.mp3" type="audio/mpeg">
+</audio>
+<div class="music-label" id="musicLabel">Spa Music</div>
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+<span id="musicIcon">🎵</span>
+</button>
 
 <!-- NAV -->
 
@@ -297,6 +329,26 @@ footer { flex-direction: column; text-align: center; }
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+// Music player
+let playing = false;
+function toggleMusic() {
+const audio = document.getElementById(‘bgMusic’);
+const icon = document.getElementById(‘musicIcon’);
+const label = document.getElementById(‘musicLabel’);
+if (playing) {
+audio.pause();
+icon.textContent = ‘🎵’;
+label.textContent = ‘Play Music’;
+} else {
+audio.play();
+icon.textContent = ‘⏸’;
+label.textContent = ‘Pause Music’;
+}
+playing = !playing;
+label.classList.add(‘show’);
+setTimeout(() => label.classList.remove(‘show’), 2000);
+}
 
 const reveals = document.querySelectorAll(’.reveal’);
 const observer = new IntersectionObserver((entries) => {
