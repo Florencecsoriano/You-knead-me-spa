@@ -81,6 +81,8 @@ background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(201,168,76,0.15), t
 .service-name { font-family: ‘Cinzel’, serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #E8D5A3; margin-bottom: 12px; }
 .service-desc { font-family: ‘Cormorant Garamond’, serif; font-size: 16px; font-style: italic; font-weight: 300; color: rgba(250,246,239,0.6); line-height: 1.7; }
 .service-tag { display: inline-block; margin-top: 18px; font-family: ‘Cinzel’, serif; font-size: 8px; letter-spacing: 0.25em; text-transform: uppercase; color: #C9A84C; border: 1px solid rgba(201,168,76,0.3); padding: 5px 12px; }
+.service-price { margin-top: 16px; font-family: ‘Cinzel’, serif; font-size: 11px; letter-spacing: 0.15em; color: #E8D5A3; border-top: 1px solid rgba(201,168,76,0.2); padding-top: 14px; }
+.service-price span { display: block; font-family: ‘Cormorant Garamond’, serif; font-size: 22px; font-style: italic; color: #C9A84C; margin-top: 4px; }
 
 /* QUOTE - cream */
 .quote-section { padding: 100px 30px; background: #FAF6EF; text-align: center; }
@@ -120,7 +122,26 @@ footer { padding: 36px 30px; background: #0d0a05; border-top: 1px solid rgba(201
 .footer-owner { font-family: ‘Cormorant Garamond’, serif; font-style: italic; font-size: 14px; color: #E8D5A3; margin-top: 6px; }
 .footer-copy { font-size: 10px; color: rgba(250,246,239,0.3); letter-spacing: 0.1em; }
 
-/* Reveal animation */
+.home-service {
+max-width: 1100px; margin: 40px auto 0;
+border: 1px solid rgba(201,168,76,0.4);
+background: rgba(201,168,76,0.06);
+padding: 36px 40px;
+display: flex; align-items: center; justify-content: space-between;
+flex-wrap: wrap; gap: 20px;
+}
+.home-service-left { flex: 1; }
+.home-service-icon { font-size: 36px; margin-bottom: 12px; display: block; }
+.home-service-title { font-family: ‘Cinzel’, serif; font-size: 14px; letter-spacing: 0.15em; text-transform: uppercase; color: #E8D5A3; margin-bottom: 10px; }
+.home-service-desc { font-family: ‘Cormorant Garamond’, serif; font-size: 17px; font-style: italic; color: rgba(250,246,239,0.65); line-height: 1.7; }
+.home-service-price { text-align: center; border-left: 1px solid rgba(201,168,76,0.3); padding-left: 40px; }
+.home-service-price-label { font-family: ‘Cinzel’, serif; font-size: 8px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A84C; margin-bottom: 8px; }
+.home-service-price-value { font-family: ‘Cormorant Garamond’, serif; font-size: 28px; font-style: italic; color: #C9A84C; }
+.home-service-price-sub { font-family: ‘Lato’, sans-serif; font-size: 11px; color: rgba(250,246,239,0.5); margin-top: 4px; letter-spacing: 0.1em; }
+@media (max-width: 640px) {
+.home-service { flex-direction: column; }
+.home-service-price { border-left: none; border-top: 1px solid rgba(201,168,76,0.3); padding-left: 0; padding-top: 20px; width: 100%; }
+}
 .reveal { opacity: 1; transform: translateY(0); }
 
 /* Music Player */
@@ -221,6 +242,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">🌹</span>
 <div class="service-name">Luxury Beauty Treatments</div>
 <p class="service-desc">Indulge in our signature beauty rituals — from radiance-restoring facials to precision skincare — each one designed to reveal your most luminous self.</p>
+<div class="service-price">45 mins <span>₱3,100</span></div>
 <span class="service-tag">Signature Service</span>
 </div>
 <div class="service-card reveal">
@@ -228,6 +250,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">🤲</span>
 <div class="service-name">Therapeutic Luxury Massage</div>
 <p class="service-desc">Our therapists combine deep therapeutic technique with the soothing power of premium oils to melt tension and transport you to total serenity.</p>
+<div class="service-price">1 hour <span>₱4,100</span></div>
 <span class="service-tag">Most Loved</span>
 </div>
 <div class="service-card reveal">
@@ -235,6 +258,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">🌿</span>
 <div class="service-name">Aromatherapy Rituals</div>
 <p class="service-desc">Harness the ancient wisdom of botanicals and essential oil blends, carefully selected to harmonise your mood and nurture your wellbeing.</p>
+<div class="service-price">1 hour <span>₱4,900</span></div>
 <span class="service-tag">Holistic Wellness</span>
 </div>
 <div class="service-card reveal">
@@ -242,6 +266,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">💆</span>
 <div class="service-name">Body Wellness Treatments</div>
 <p class="service-desc">From luxurious full-body wraps to targeted muscle recovery treatments, offering complete body care for your ultimate comfort and renewal.</p>
+<div class="service-price">90 mins <span>₱6,200</span></div>
 <span class="service-tag">Full Body Care</span>
 </div>
 <div class="service-card reveal">
@@ -249,6 +274,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">✨</span>
 <div class="service-name">Premium Skin Care</div>
 <p class="service-desc">Bespoke skincare journeys using only the finest professional-grade products, tailored precisely to your skin type and lifestyle needs.</p>
+<div class="service-price">1 hour <span>₱4,900</span></div>
 <span class="service-tag">Top Quality</span>
 </div>
 <div class="service-card reveal">
@@ -256,13 +282,27 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">👑</span>
 <div class="service-name">VIP Wellness Packages</div>
 <p class="service-desc">Curated head-to-toe experiences for those who desire total transformation — combining multiple treatments into one extraordinary day.</p>
+<div class="service-price">2 hours <span>₱8,200</span></div>
 <span class="service-tag">Exclusive</span>
 </div>
 </div>
+
+<!-- HOME SERVICE -->
+
+<div class="home-service reveal">
+<div class="home-service-left">
+<span class="home-service-icon">🏠</span>
+<div class="home-service-title">You Knead Me — Home Service</div>
+<p class="home-service-desc">Can't come to us? We come to you! Enjoy all our luxury treatments at the comfort of your own home. Simply book your preferred service and we will bring the full spa experience directly to your door.</p>
+</div>
+<div class="home-service-price">
+<div class="home-service-price-label">Additional Fee</div>
+<div class="home-service-price-value">+ ₱2,000</div>
+<div class="home-service-price-sub">Added to any service</div>
+</div>
+</div>
+
 </section>
-
-<!-- QUOTE -->
-
 <section class="quote-section">
 <span class="quote-mark reveal">"</span>
 <blockquote class="reveal">You deserve to be cared for with <em>intention</em>, treated with <em>reverence</em>, and sent back into the world feeling like the most luminous version of yourself.</blockquote>
@@ -312,7 +352,7 @@ footer { flex-direction: column; text-align: center; }
 </div>
 </div>
 </div>
-<a href="mailto:Youkneadme.booking@gmail.com" class="book-btn">Enquire &amp; Book Now</a>
+<a href="/cdn-cgi/l/email-protection#f5ac9a809e9b9094919890db979a9a9e9c9b92b59298949c99db969a98" class="book-btn">Enquire &amp; Book Now</a>
 ```
 
 </div>
@@ -328,7 +368,7 @@ footer { flex-direction: column; text-align: center; }
 <div class="footer-copy">© 2015 You Knead Me. All rights reserved.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 
 // Music player
 let playing = false;
@@ -351,7 +391,4 @@ setTimeout(() => label.classList.remove(‘show’), 2000);
 }
 
 const reveals = document.querySelectorAll(’.reveal’);
-const observer = new IntersectionObserver((entries) => {
-entries.forEach(e => { if (e.isIntersecting) e.target.classList.add(‘visible’); });
-}, { threshold: 0.08 });
-reveals.forEach(r => observer.obse
+const observer = new IntersectionObserver((entrie
