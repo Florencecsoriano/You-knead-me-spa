@@ -144,6 +144,19 @@ flex-wrap: wrap; gap: 20px;
 }
 .reveal { opacity: 1; transform: translateY(0); }
 
+/* REVIEWS */
+.reviews { padding: 90px 30px; background: #FAF6EF; }
+.reviews-header { text-align: center; margin-bottom: 56px; }
+.reviews-label { font-family: ‘Cinzel’, serif; font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; color: #C9A84C; margin-bottom: 14px; }
+.reviews-title { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(28px, 4vw, 52px); font-weight: 300; color: #1A1209; line-height: 1.1; }
+.reviews-title em { font-style: italic; color: #8B6914; }
+.reviews-sub { font-family: ‘Cormorant Garamond’, serif; font-size: 17px; font-style: italic; color: #3D2B1F; margin-top: 14px; }
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+.review-card { background: #fff; border: 1px solid rgba(201,168,76,0.2); padding: 36px 28px; }
+.review-stars { color: #C9A84C; font-size: 18px; letter-spacing: 4px; margin-bottom: 16px; }
+.review-text { font-family: ‘Cormorant Garamond’, serif; font-size: 17px; font-style: italic; color: #3D2B1F; line-height: 1.8; margin-bottom: 20px; }
+.review-author { font-family: ‘Cinzel’, serif; font-size: 10px; letter-spacing: 0.2em; color: #C9A84C; text-transform: uppercase; }
+
 /* Music Player */
 .music-btn {
 position: fixed; bottom: 30px; right: 30px; z-index: 999;
@@ -206,7 +219,7 @@ footer { flex-direction: column; text-align: center; }
 <div class="hero-content">
 <span class="hero-tagline">Luxury · Wellness · Transformation</span>
 <h1 class="hero-title">You Knead Me<em>Spa & Beauty Wellness</em></h1>
-<p class="hero-sub">Where every touch is a ritual, every visit a sanctuary</p>
+<p class="hero-sub">Where every touch is a ritual, every visit is a sanctuary</p>
 <div class="hero-line"></div>
 <a href="#booking" class="btn-gold">Book Your Experience</a>
 </div>
@@ -242,7 +255,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">🌹</span>
 <div class="service-name">Luxury Beauty Treatments</div>
 <p class="service-desc">Indulge in our signature beauty rituals — from radiance-restoring facials to precision skincare — each one designed to reveal your most luminous self.</p>
-<div class="service-price">45 mins <span>₱3,100</span></div>
+<div class="service-price">45 mins — A$99 <span>₱4,200</span></div>
 <span class="service-tag">Signature Service</span>
 </div>
 <div class="service-card reveal">
@@ -250,7 +263,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">🤲</span>
 <div class="service-name">Therapeutic Luxury Massage</div>
 <p class="service-desc">Our therapists combine deep therapeutic technique with the soothing power of premium oils to melt tension and transport you to total serenity.</p>
-<div class="service-price">1 hour <span>₱4,100</span></div>
+<div class="service-price">1 hour — A$149 <span>₱6,300</span></div>
 <span class="service-tag">Most Loved</span>
 </div>
 <div class="service-card reveal">
@@ -258,7 +271,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">🌿</span>
 <div class="service-name">Aromatherapy Rituals</div>
 <p class="service-desc">Harness the ancient wisdom of botanicals and essential oil blends, carefully selected to harmonise your mood and nurture your wellbeing.</p>
-<div class="service-price">1 hour <span>₱4,900</span></div>
+<div class="service-price">1 hour — A$119 <span>₱5,000</span></div>
 <span class="service-tag">Holistic Wellness</span>
 </div>
 <div class="service-card reveal">
@@ -266,7 +279,7 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">💆</span>
 <div class="service-name">Body Wellness Treatments</div>
 <p class="service-desc">From luxurious full-body wraps to targeted muscle recovery treatments, offering complete body care for your ultimate comfort and renewal.</p>
-<div class="service-price">90 mins <span>₱6,200</span></div>
+<div class="service-price">90 mins — A$199 <span>₱8,400</span></div>
 <span class="service-tag">Full Body Care</span>
 </div>
 <div class="service-card reveal">
@@ -274,15 +287,14 @@ footer { flex-direction: column; text-align: center; }
 <span class="service-icon">✨</span>
 <div class="service-name">Premium Skin Care</div>
 <p class="service-desc">Bespoke skincare journeys using only the finest professional-grade products, tailored precisely to your skin type and lifestyle needs.</p>
-<div class="service-price">1 hour <span>₱4,900</span></div>
-<span class="service-tag">Top Quality</span>
+<div class="service-price">1 hour — A$129 <span>₱5,500</span></div>
 </div>
 <div class="service-card reveal">
 <div class="service-num">06</div>
 <span class="service-icon">👑</span>
 <div class="service-name">VIP Wellness Packages</div>
 <p class="service-desc">Curated head-to-toe experiences for those who desire total transformation — combining multiple treatments into one extraordinary day.</p>
-<div class="service-price">2 hours <span>₱8,200</span></div>
+<div class="service-price">2 hours — A$249 <span>₱10,500</span></div>
 <span class="service-tag">Exclusive</span>
 </div>
 </div>
@@ -297,7 +309,7 @@ footer { flex-direction: column; text-align: center; }
 </div>
 <div class="home-service-price">
 <div class="home-service-price-label">Additional Fee</div>
-<div class="home-service-price-value">+ ₱2,000</div>
+<div class="home-service-price-value">+ A$50 / ₱2,100</div>
 <div class="home-service-price-sub">Added to any service</div>
 </div>
 </div>
@@ -327,6 +339,38 @@ footer { flex-direction: column; text-align: center; }
 </div>
 </section>
 
+<!-- REVIEWS -->
+
+<section class="reviews">
+<div class="reviews-header">
+<p class="reviews-label reveal">Client Experiences</p>
+<h2 class="reviews-title reveal">What Our <em>Guests Say</em></h2>
+<p class="reviews-sub reveal">Every visit leaves a lasting impression</p>
+</div>
+<div class="reviews-grid">
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"From the moment I walked in, I felt like royalty. The aromatherapy massage was absolutely divine — my body and mind felt completely restored. I will never go anywhere else."</p>
+<div class="review-author">— Maria L.</div>
+</div>
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"The VIP Wellness Package was the best gift I ever gave myself. Every single treatment was performed with such care and expertise. Truly a world-class experience in Baguio."</p>
+<div class="review-author">— Sofia R.</div>
+</div>
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"I booked the home service and Florence and her team were so professional and warm. They transformed my living room into a spa sanctuary. Absolutely recommend to everyone!"</p>
+<div class="review-author">— Grace T.</div>
+</div>
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"The Premium Skin Care treatment left my skin glowing for weeks! Florence truly understands luxury wellness. You Knead Me is a hidden gem — I tell all my friends about it."</p>
+<div class="review-author">— Anne M.</div>
+</div>
+</div>
+</section>
+
 <!-- BOOKING -->
 
 <section class="booking" id="booking">
@@ -337,13 +381,6 @@ footer { flex-direction: column; text-align: center; }
 <div class="contact-items">
 
 ```
-<div class="contact-item">
-<div class="contact-icon">📍</div>
-<div>
-<div class="contact-label">Our Location</div>
-<div class="contact-value">85 Pinsao, Pilot Project<br>Baguio City 2600, Philippines</div>
-</div>
-</div>
 <div class="contact-item">
 <div class="contact-icon">📧</div>
 <div>
@@ -370,7 +407,7 @@ footer { flex-direction: column; text-align: center; }
 <footer>
 <div>
 <div class="footer-brand">You Knead Me Spa &amp; Beauty Wellness</div>
-<div class="footer-owner">Florence Colaling Soriano — Owner &amp; Founder</div>
+<div class="footer-owner">At your service, Florence C. S.</div>
 </div>
 <div class="footer-copy">© 2015 You Knead Me. All rights reserved.</div>
 </footer>
