@@ -144,6 +144,54 @@ flex-wrap: wrap; gap: 20px;
 }
 .reveal { opacity: 1; transform: translateY(0); }
 
+/* ACTIVITIES */
+.activities { padding: 90px 30px; background: #1A1209; }
+.activities-header { text-align: center; margin-bottom: 56px; }
+.activities-label { font-family: ‘Cinzel’, serif; font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; color: #C9A84C; margin-bottom: 14px; }
+.activities-title { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(28px, 4vw, 52px); font-weight: 300; color: #FAF6EF; line-height: 1.1; margin-bottom: 16px; }
+.activities-title em { font-style: italic; color: #E8D5A3; }
+.activities-sub { font-family: ‘Cormorant Garamond’, serif; font-size: 17px; font-style: italic; color: rgba(250,246,239,0.6); line-height: 1.8; max-width: 800px; margin: 0 auto 28px; }
+.activities-notice { max-width: 700px; margin: 0 auto; border: 1px solid rgba(201,168,76,0.4); background: rgba(201,168,76,0.08); padding: 20px 28px; display: flex; align-items: flex-start; gap: 14px; text-align: left; }
+.notice-icon { font-size: 24px; flex-shrink: 0; }
+.activities-notice p { font-family: ‘Cormorant Garamond’, serif; font-size: 16px; font-style: italic; color: #E8D5A3; line-height: 1.7; }
+.activities-notice strong { color: #C9A84C; font-style: normal; }
+.activities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; max-width: 1100px; margin: 40px auto 0; }
+.activity-card { padding: 32px 28px; border: 1px solid rgba(201,168,76,0.2); background: rgba(201,168,76,0.03); }
+.activity-card:hover { border-color: rgba(201,168,76,0.4); background: rgba(201,168,76,0.07); }
+.activity-day { font-family: ‘Cinzel’, serif; font-size: 8px; letter-spacing: 0.35em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; }
+.activity-icon { font-size: 28px; margin-bottom: 10px; display: block; }
+.activity-name { font-family: ‘Cinzel’, serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #E8D5A3; margin-bottom: 6px; }
+.activity-theme { font-family: ‘Cormorant Garamond’, serif; font-size: 18px; font-style: italic; color: #C9A84C; margin-bottom: 12px; }
+.activity-desc { font-family: ‘Cormorant Garamond’, serif; font-size: 15px; font-style: italic; color: rgba(250,246,239,0.6); line-height: 1.7; }
+
+/* ACTIVITY PRICING */
+.activity-pricing { max-width: 1100px; margin: 48px auto 0; text-align: center; }
+.activity-pricing-label { font-family: ‘Cinzel’, serif; font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; color: #C9A84C; margin-bottom: 28px; }
+.activity-pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.activity-price-card { border: 1px solid rgba(201,168,76,0.2); background: rgba(201,168,76,0.03); padding: 36px 24px; position: relative; }
+.activity-price-card.featured { border-color: rgba(201,168,76,0.6); background: rgba(201,168,76,0.1); }
+.activity-price-icon { font-size: 28px; margin-bottom: 12px; }
+.activity-price-name { font-family: ‘Cinzel’, serif; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: #E8D5A3; margin-bottom: 8px; }
+.activity-price-desc { font-family: ‘Cormorant Garamond’, serif; font-size: 14px; font-style: italic; color: rgba(250,246,239,0.5); margin-bottom: 16px; }
+.activity-price-value { font-family: ‘Cormorant Garamond’, serif; font-size: 28px; font-style: italic; color: #C9A84C; }
+.activity-price-value span { display: block; font-size: 16px; color: rgba(250,246,239,0.5); margin-top: 4px; }
+.activity-price-tag { display: inline-block; margin-top: 12px; font-family: ‘Cinzel’, serif; font-size: 8px; letter-spacing: 0.25em; text-transform: uppercase; color: #1A1209; background: linear-gradient(135deg, #E8D5A3, #C9A84C); padding: 5px 14px; }
+
+/* PREMIUM PACKAGES */
+.premium { padding: 90px 30px; background: #FAF6EF; }
+.premium-header { text-align: center; margin-bottom: 56px; }
+.premium-label { font-family: ‘Cinzel’, serif; font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; color: #C9A84C; margin-bottom: 14px; }
+.premium-title { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(28px, 4vw, 52px); font-weight: 300; color: #1A1209; line-height: 1.1; }
+.premium-title em { font-style: italic; color: #8B6914; }
+.premium-sub { font-family: ‘Cormorant Garamond’, serif; font-size: 17px; font-style: italic; color: #3D2B1F; margin-top: 14px; max-width: 700px; margin-left: auto; margin-right: auto; }
+.premium-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+.premium-card { background: #fff; border: 1px solid rgba(201,168,76,0.25); padding: 44px 32px; text-align: center; }
+.premium-card:hover { border-color: rgba(201,168,76,0.5); box-shadow: 0 8px 40px rgba(201,168,76,0.1); }
+.premium-icon { font-size: 40px; margin-bottom: 16px; display: block; }
+.premium-name { font-family: ‘Cinzel’, serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #1A1209; margin-bottom: 16px; }
+.premium-desc { font-family: ‘Cormorant Garamond’, serif; font-size: 17px; font-style: italic; color: #3D2B1F; line-height: 1.8; margin-bottom: 24px; }
+.premium-cta { display: inline-block; font-family: ‘Cinzel’, serif; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #8B6914; border: 1px solid rgba(201,168,76,0.4); padding: 10px 20px; }
+
 /* REVIEWS */
 .reviews { padding: 90px 30px; background: #FAF6EF; }
 .reviews-header { text-align: center; margin-bottom: 56px; }
@@ -339,6 +387,129 @@ footer { flex-direction: column; text-align: center; }
 </div>
 </section>
 
+<!-- ACTIVITIES -->
+
+<section class="activities">
+<div class="activities-header">
+<p class="activities-label reveal">Community & Wellbeing</p>
+<h2 class="activities-title reveal">Weekly Holistic <em>Wellbeing Activities</em></h2>
+<p class="activities-sub reveal">A carefully curated weekly programme designed to nurture the mind, body and spirit — complementing your wellness journey with therapeutic, meaningful and joyful experiences.</p>
+<div class="activities-notice reveal">
+<span class="notice-icon">📅</span>
+<p>Spaces are limited and lovingly prepared — secure yours with a minimum <strong>1 week advance booking</strong> for a perfectly curated experience.</p>
+</div>
+</div>
+<div class="activities-grid">
+<div class="activity-card reveal">
+<div class="activity-day">Monday</div>
+<div class="activity-icon">♎️</div>
+<div class="activity-name">Monday Matinee</div>
+<div class="activity-theme">Life Views</div>
+<p class="activity-desc">A reflective film and discussion session exploring life perspectives, inspiring stories and meaningful conversations that broaden the mind and uplift the spirit.</p>
+</div>
+<div class="activity-card reveal">
+<div class="activity-day">Tuesday</div>
+<div class="activity-icon">🪯</div>
+<div class="activity-name">Bonfire Tuesday</div>
+<div class="activity-theme">Music Around the Fire</div>
+<p class="activity-desc">A therapeutic sound experience where music, warmth and shared stories create deep emotional healing. Singing, instruments and the crackling fire restore inner peace.</p>
+</div>
+<div class="activity-card reveal">
+<div class="activity-day">Wednesday</div>
+<div class="activity-icon">☯️</div>
+<div class="activity-name">Wednesday Wellness</div>
+<div class="activity-theme">What's Cookin'</div>
+<p class="activity-desc">A nurturing cooking session exploring wholesome, healing recipes using natural ingredients. Food as medicine — nourishing the body from the inside out.</p>
+</div>
+<div class="activity-card reveal">
+<div class="activity-day">Thursday</div>
+<div class="activity-icon">☮️</div>
+<div class="activity-name">Thursday Funday</div>
+<div class="activity-theme">Artsy and Crafty</div>
+<p class="activity-desc">A creative therapy session using art, craft and self-expression to reduce stress, boost mood and unlock creativity. No experience needed — just pure joy!</p>
+</div>
+<div class="activity-card reveal">
+<div class="activity-day">Friday</div>
+<div class="activity-icon">🔯</div>
+<div class="activity-name">Friday Forum</div>
+<div class="activity-theme">Life Story Tale</div>
+<p class="activity-desc">A safe and supportive storytelling circle where sharing personal journeys builds connection, emotional release and mutual healing among participants.</p>
+</div>
+<div class="activity-card reveal">
+<div class="activity-day">Saturday</div>
+<div class="activity-icon">⚛️</div>
+<div class="activity-name">Saturday Socials</div>
+<div class="activity-theme">Out and About</div>
+<p class="activity-desc">Community outings designed to stimulate the senses, encourage social bonding and promote joy through shared experiences in the world around us.</p>
+</div>
+<div class="activity-card reveal">
+<div class="activity-day">Sunday</div>
+<div class="activity-icon">✝️</div>
+<div class="activity-name">Spiritual Sunday</div>
+<div class="activity-theme">Worship Picnic</div>
+<p class="activity-desc">A peaceful outdoor gathering combining gentle prayer, gratitude reflection and nature connection. Nourish your soul in the fresh air surrounded by community and calm.</p>
+</div>
+</div>
+
+<!-- ACTIVITY PRICING -->
+
+<div class="activity-pricing reveal">
+<p class="activity-pricing-label">Activity Investment</p>
+<div class="activity-pricing-grid">
+<div class="activity-price-card">
+<div class="activity-price-icon">✦</div>
+<div class="activity-price-name">Single Session</div>
+<div class="activity-price-desc">Per person, per activity</div>
+<div class="activity-price-value">A$150 <span>₱6,300</span></div>
+</div>
+<div class="activity-price-card featured">
+<div class="activity-price-icon">👑</div>
+<div class="activity-price-name">VIP Full Week</div>
+<div class="activity-price-desc">All 7 sessions per person</div>
+<div class="activity-price-value">A$799 <span>₱33,700</span></div>
+<div class="activity-price-tag">Best Value</div>
+</div>
+<div class="activity-price-card">
+<div class="activity-price-icon">🏆</div>
+<div class="activity-price-name">Private Group</div>
+<div class="activity-price-desc">Exclusive use per session</div>
+<div class="activity-price-value">A$500 <span>₱21,100</span></div>
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- PREMIUM PACKAGES -->
+
+<section class="premium">
+<div class="premium-header">
+<p class="premium-label reveal">Exclusive Offerings</p>
+<h2 class="premium-title reveal">Premium <em>Experiences</em></h2>
+<p class="premium-sub reveal">Designed for those who demand nothing but the finest — our exclusive packages elevate wellness into a world-class lifestyle.</p>
+</div>
+<div class="premium-grid">
+<div class="premium-card reveal">
+<div class="premium-icon">🏢</div>
+<div class="premium-name">Corporate Wellness Package</div>
+<p class="premium-desc">Invest in your team's most valuable asset — their wellbeing. We design bespoke wellness retreats and programmes for corporate groups, executive teams and business leaders. Boost performance, reduce stress and inspire greatness.</p>
+<div class="premium-cta">Enquire for Custom Pricing</div>
+</div>
+<div class="premium-card reveal">
+<div class="premium-icon">🎁</div>
+<div class="premium-name">Luxury Gift Vouchers</div>
+<p class="premium-desc">The most thoughtful gift you can give — the gift of pure wellness. Our beautifully presented gift vouchers are perfect for clients, business partners, loved ones and special occasions. Available in any value.</p>
+<div class="premium-cta">Available from A$99 / ₱4,200</div>
+</div>
+<div class="premium-card reveal">
+<div class="premium-icon">💎</div>
+<div class="premium-name">Elite Membership</div>
+<p class="premium-desc">For those who choose to make luxury wellness a way of life. Our exclusive membership grants priority booking, member-only rates, personalised wellness plans and access to all weekly activities — an investment in your finest self.</p>
+<div class="premium-cta">From A$499 / ₱21,100 per month</div>
+</div>
+</div>
+</section>
+
 <!-- REVIEWS -->
 
 <section class="reviews">
@@ -368,11 +539,36 @@ footer { flex-direction: column; text-align: center; }
 <p class="review-text">"The Premium Skin Care treatment left my skin glowing for weeks! Florence truly understands luxury wellness. You Knead Me is a hidden gem — I tell all my friends about it."</p>
 <div class="review-author">— Anne M.</div>
 </div>
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Spiritual Sunday was the most peaceful morning I have had in years. The worship picnic in the fresh air with such a warm and welcoming group truly fed my soul. I left feeling lighter and deeply grateful."</p>
+<div class="review-author">— Celine A.</div>
 </div>
-</section>
-
-<!-- BOOKING -->
-
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Bonfire Tuesday was pure magic. Sitting around the fire, singing together and sharing stories — it was healing in the most natural and beautiful way. I did not want the night to end."</p>
+<div class="review-author">— Jerome B.</div>
+</div>
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Thursday Funday completely surprised me! I never considered myself creative but the Artsy and Crafty session unlocked something in me. I felt so free, so present and genuinely happy."</p>
+<div class="review-author">— Luz M.</div>
+</div>
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"The Friday Forum storytelling circle moved me to tears in the best way. Hearing other people's life stories reminded me of my own strength. Florence creates such a safe and loving space."</p>
+<div class="review-author">— Patricia D.</div>
+</div>
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Wednesday Wellness cooking session was so much fun and so educational! We made the most nourishing meals together and I finally understand how food truly heals. Cannot wait to come back!"</p>
+<div class="review-author">— Rosalyn C.</div>
+</div>
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Saturday Socials brought our little group so close together. The outing was so well organised and thoughtful — every detail was prepared with love. You Knead Me truly goes above and beyond."</p>
+<div class="review-author">— Daniel F.</div>
+</div>
 <section class="booking" id="booking">
 <p class="booking-label reveal">Reserve Your Visit</p>
 <h2 class="booking-title reveal">Book Your <em>Luxury Experience</em></h2>
